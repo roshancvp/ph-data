@@ -10,7 +10,7 @@ def write(reader, out):
     my_file = open(out, 'w')
     with my_file:
         writer = csv.writer(my_file)
-        writer.writerows(np.array(reader)[1:1000,[-2,-1]])
+        writer.writerows(np.array(reader)[1:140000,[-2,-1]])
 
 if __name__ == '__main__':
     clean()
